@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Datos</title>
+    
+    
+</head>
+<body>
+
+<table class ="tablaDatos" border="1">
+    <thead>
+        <tr>
+            <th>index</th>
+            <th>guid</th>
+            <th>isActive</th>
+            <th>balance</th>
+            <th>age</th>
+            <th>eyeColor</th>
+            <th>name</th>
+            <th>gender</th>
+            <th>company</th>
+            <th>email</Th>
+            <th>phone</th>
+            <th>address</th>
+            <th>registered</th>
+            <th>latitude</th>
+            <th>longitude</th>
+            <th>tags</th>
+            <th>greeting</th>
+            <th>favoriteFruit</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<script>
+    // Función para generar la tabla
+    function generarTabla(datos) {
+        const tablaBody = document.querySelector('.tablaDatos tbody');
+
+        // Generar filas de la tabla
+        datos.forEach(item => {
+            const fila = document.createElement('tr');
+            fila.innerHTML = `
+                <td>${item.index}</td>
+                <td>${item.guid}</td>
+                <td>${item.isActive}</td>
+                <td>${item.balance}</td>
+                <td>${item.age}</td>
+                <td>${item.eyeColor}</td>
+                <td>${item.name}</td>
+                <td>${item.gender}</td>
+                <td>${item.company}</td>
+                <td>${item.email}</td>
+                <td>${item.phone}</td>
+                <td>${item.address}</td>
+                <td>${item.registered}</td>
+                <td>${item.latitude}</td>
+                <th>${item.longitude}</th>
+                <th>${item.tags}</th>
+                <th>${item.greeting}</th>
+                <th>${item.favoriteFruit}</th>
+            `;
+            tablaBody.appendChild(fila);
+        });
+    }
+
+    // Realizar una solicitud AJAX para cargar el archivo JSON
+    const xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            const datosJSON = JSON.parse(this.responseText);
+            generarTabla(datosJSON);
+        }
+    };
+    xhttp.open("GET", "tablas.json", true);
+    xhttp.send();
+</script>
+
+</body>
+</html>
