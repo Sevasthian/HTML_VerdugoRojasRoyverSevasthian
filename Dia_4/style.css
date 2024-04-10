@@ -1,44 +1,136 @@
-.contenedor{
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    height: 100vh; /* Establecer la altura del contenedor al 100% del viewport */
-    width: 60vw;
-    margin: 0 auto; /* Auto-margen horizontal para centrar */
-}
-
 #text{
     color: white;
 }
 body{
-    background-color: white;
+    background-color: rgb(2 6 23 / var(--tw-bg-opacity));
     margin: 0;
     padding: 0;
+    margin-top: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+.PrimerCollage{
+    width: 1024px;
+    height: 1271.17px; 
+    background-color: black;
+    border-radius: 1.5%;
+    padding: 2%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border-color: #e2e8f0;
 }
 .SegundoCollage{
+    width: 1024px; 
+    /*height: 520.27px;*/
+    height: 600px; 
     background-color: black;
     border-radius: 1.5%;
     padding: 2%;
-    margin: 3%
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border-color: #e2e8f0;
 }
 .TercerCollage{
+    width: 1024px;
+    height: 1231.86px; 
     background-color: black;
     border-radius: 1.5%;
     padding: 2%;
-    margin: 3%
-}
-.Primercollage{
-    background-color: black;
-    border-radius: 1.5%;
-    padding: 2%;
-    margin: 3%
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border-color: #e2e8f0;
 }
 .CuartoCollage{
+    width: 1024px;
+    height: 1209px; 
     background-color: black;
     border-radius: 1.5%;
     padding: 2%;
-    margin: 3%
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border-color: #e2e8f0;
+}
+/*PrimerCollage*/
+#video1{
+    padding-bottom: 24px;
+    float: left;
 }
 #imagen1{
-    width: 50%;
-    height: 50%;
+    padding-bottom: 24px;
+    width: 476px;
+    height: 599.585px;
+    border-radius: 1.5%;
+    float: right;
+}
+#video2{
+    float: left;
+}
+#imagen2{
+    padding-top: 24px;
+    width: 476px;
+    height: 599.585px;
+    border-radius: 1.5%;
+    float: left;
+}
+#video3{
+    float: right;
+}
+/*SegundoCollage*/
+#imagen3{
+    width: 332px;
+    height: 60px;
+    float: left;
+    padding-right: 24px;
+}
+#imagen4{
+    width: 160px;
+    height: 215px;
+    float: left;
+}
+#video4{
+    float: right;
+    padding-left: 24px;
+}
+#video5{
+    float: left;
+    padding-right: 24px;
+}
+#video6{
+    float: left;
+}
+/*TercerCollage*/
+#video13{
+    float: left;
+}
+#video14{
+    float:right;
+}
+#video15{
+    float: left;
+}
+#video16{
+    float: right;
+}
+#video17{
+    float: left;
+}
+#imagen5{
+    width: 486px;
+    height: 540px;
+    float: right;
+}
+/*CuartoCollage*/
+#video18{
+    float: left;
+}
+#video19{
+    float: left ;
+}
+#video20{
+    float: right;
+}
+#video21{
+    float: right;
 }
